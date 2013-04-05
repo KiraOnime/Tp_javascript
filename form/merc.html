@@ -1,0 +1,72 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <script src="assets/javascript/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/merc.css"/>
+	     <title>formulaire</title>
+  </head>
+	<body>
+	<div class="span9">
+		<div id="element2">
+			<h2>Club Vélo Plateau</h2>
+			<div>
+				<label class="">Nom</label>
+				<input value="" class"" id="nom">
+			</div>
+			<div>
+				<label class="">Prénom</label>
+				<input value="" class"" id="prenom">
+			</div>
+			<div>
+				<label class="">Courriel</label>
+				<input value="" class"" id="courriel">
+			</div>
+			<div>
+				<label class="">Url</label>
+				<input value="https://www.google.com" class"" id="url">
+			</div>
+			<div id="element3">
+				<h3><label>Qui êtes vous?</label>	</h3>
+		
+		<select id="thechoices">
+			<option value="box1">Sélection</option>
+			<option value="box2">Cyclosportif</option>
+			<option value="box3">Compétition</option>
+			<option value="all">Tous les profils</option> 
+		</select>
+
+	<!-- the DIVs -->
+	<div id="boxes">
+		<div id="box1"><p></p></div>
+		<div id="box2"><p>Profil cyclosportif</p><select id="profil">
+        <option selected="selected" value="01">occasionnel</option>
+        <option value="02">familial</option>
+		<option value="03">épicurien</option>
+		<option value="04">assidu</option>
+		<option value="05">à l'année</option>
+		<option value="06">multiple</option>
+      </select>
+			</div>
+		<div id="box3"><p>Profil compétition</p>  <select id="visa_month">
+	        <option selected="selected" value="01">route</option>
+	        <option value="02">montagne</option>
+			<option value="03">piste</option>
+			<option value="04">bmx</option>
+			<option value="05">cyclocross</option>
+			<option value="06">multiple</option>
+	      </select>
+		</div>
+		</div>
+           <div><label>Commentaires</label></div>
+                 <textarea rows="3" cols="40" name="champ-text" id="textarea01"/>
+				   </textarea>
+				 <div>
+					<button id="bouton">Soumettre</button>
+				   </div>				
+	
+	<script src="assets/javascript/merc.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,469 @@
+/********  image zoom  Css start ********/
+
+#gal1{
+    overflow-y:scroll;
+    width:78%;
+    height:40%;
+}
+
+/********  image zoom Css end ********/
+
+/********  Basic Css start ********/
+
+.clearBoth{
+    clear:both;
+}
+
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal 100% Georgia, serif;
+  background: #535353 url(../images/pattern.jpg) repeat;
+  color: #FFF;}
+
+p
+{ padding: 0 0 15px 0;
+  line-height: 1.7em;
+  font-size: 100% }
+
+img
+{ border: 0;}
+
+h1, h2, h3, h4, h5, h6 
+{ font: normal 175% Georgia, serif;
+  color: #FFF;
+  text-shadow: 1px 1px #000;
+  letter-spacing: -1px;
+  margin: 0 0 10px 0;
+  padding: 5px 0 0 0;}
+
+h2
+{ font: normal 165% Georgia, serif;}
+
+h3
+{ font: normal 100% Georgia, serif;
+}
+
+h3 a, h3 a:hover
+{ color: #96B7B7;
+}
+
+h4, h5, h6
+{ margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 150% Georgia, serif;
+  color: #098EFF;
+  line-height: 1.5em;}
+
+h5, h6
+{ font: normal 95% Georgia, serif;
+  color: #888;
+  padding-bottom: 15px;}
+
+a, a:hover
+{ background: transparent;
+  outline: none;
+  text-decoration: none;
+  color: #098EFF;
+}
+
+a:hover
+{ text-decoration: underline;}
+
+ul
+{ margin: 2px 0 22px 30px;
+  line-height: 1.7em;
+  font-style: normal;
+  font-size: 100%;}
+
+ol
+{ margin: 8px 0 22px 20px;}
+
+ol li
+{ margin: 0 0 11px 0;}
+
+#main, #header, #banner, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+
+#header
+{ width: 1000px;
+  height: 55px;
+  padding: 50px 0 0 0;
+  background: transparent;}
+
+#welcome
+{ width: 285px;
+  float: left;
+  height: 30px;
+  padding: 5px 0 20px 80px;
+  margin: 0 auto;
+  background: transparent;} 
+  
+#welcome H1
+{ font: normal 200% times, Helvetica, sans-serif;
+  color: #FFF;}
+  
+span
+{ color: #098EFF;}
+
+ 
+#menubar
+{ width: 635px;
+  height: 35px;
+  text-align: center; 
+  margin: 0 auto;
+  padding-bottom: 20px;
+  float: right;
+  background: transparent;} 
+
+ul#menu
+{ 
+  margin: 0;
+  float: right;}
+
+ul#menu li
+{ padding: 0 0 0 0px;
+  list-style: none;
+  margin: 2px 0 0 0;
+  display: inline;
+  background: transparent;}
+
+ul#menu li a
+{ font: normal 120% Georgia, serif;
+  float: left;
+  letter-spacing: -1px;
+  height: 30px;
+  padding: 15px 25px 10px 25px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;} 
+
+ul#menu li a:hover
+{ color: #FFF;
+  text-decoration: underline;}
+  
+ul#menu li.current a
+{ color: #098EFF;
+  text-decoration: underline;}
+
+#site_content
+{ width: 1000px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  background: #1D1D1D;
+  -webkit-box-shadow: inset 5px 5px 30px 5px #535353;
+  -moz-box-shadow: inset 5px 5px 30px 5px #535353;
+  box-shadow: inset 5px 5px 30px 5px #535353;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;} 
+  
+#image_container  
+{ width: 1000px;}
+
+#text_content
+{ float: right;
+  width: 500px;
+  padding: 0; 
+  margin: 0 20px 0 20px;}
+  
+.static_image
+{ 
+  width: 530px;
+  height: 450px;
+  margin: 0 0 20px 20px;}  
+  
+#footer
+{ font: normal 120% Georgia, serif;
+  width: 1070px;
+  letter-spacing: -1px;
+  padding: 0 0 26px 0;
+  text-align: center; 
+  background: transparent;
+  color: #FFF;}
+
+#footer a, #footer a:hover
+{ color: #FFF;
+  text-decoration: none;}
+
+#footer a:hover
+{ text-decoration: underline;}
+
+.footer_container_box
+{ font: normal 80% Arial, Helvetica, sans-serif;
+  width: 325px;
+  padding: 5px;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  float: left;
+  background: transparent;
+  color: #FFF;}
+
+.footer_container_boxl
+{ font: normal 80% Arial, Helvetica, sans-serif;
+  width: 325px;
+  padding: 5px;
+  text-align: center;
+  margin: 10px 0 10px 10px;
+  float: left;
+  background: transparent;
+  color: #FFF;}
+
+.form_settings
+{ margin: 15px 0 0 0;}
+
+.form_settings p
+{ padding: 0 0 4px 0;}
+
+.form_settings span
+{ float: left; 
+  width: 280px; 
+  text-align: left;}
+  
+.form_settings input, .form_settings textarea
+{ padding: 2px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #E5E5DB; 
+  background: #FFF; 
+  color: #47433F;}
+  
+.form_settings input[type="checkbox"]
+{ padding: 2px 0; 
+  width: 15px; 
+  font: 100% arial; 
+  border: 0; 
+  background: #FFF; 
+  color: #47433F;
+  margin: 28px 0;}
+
+.form_settings .submit
+{ font: 100% arial; 
+  border: 1px solid; 
+  width: 99px; 
+  margin: 0 0 0 206px; 
+  height: 26px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #5082BD; 
+  color: #FFF;} 
+  
+/********  Basic Css end ********/
+/********  dark Css start ********/
+
+/* dark theme */
+
+#left_content ul li { 
+  background: url(../images/dark_bullet.png) no-repeat left center;}
+
+#slideshow-caption {
+  color: #FFF;
+  background: #151515;}
+ 
+.form_settings .submit { 
+  background: #444;
+  text-shadow: 1px 1px #000;
+  color: #FFF;}
+
+.form_settings input, .form_settings textarea, .form_settings select { 
+  border-color: #777;}
+
+#blog_container h4.select {
+  background: url(../images/dark_blog.png) no-repeat right top;}
+
+.blog h3 {
+  color: #111;}
+  
+#blog_text {
+  background: #444;
+  color: #EEE;}
+
+ul#nav li a {
+  text-shadow: 1px 1px #000;
+  color: #FFF;}
+
+ul#nav ul { 
+  background: #151515;}
+
+ul#nav li.selected a, ul#nav li a:hover, ul#nav ul li a:hover, ul#nav ul li a:focus, ul#nav li.selected ul a:hover { 
+  color: #C5E105;}
+
+a.thumb, ul.thumbs li.selected a.thumb {
+  background: #FFF;}
+  
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+  background: #444;
+  color: #AAA;}
+  
+div.pagination a:hover {
+  background: #EEE;
+  color: #111;}
+  
+div.pagination span.current {
+  background: #444;
+  color: #FFF;}
+
+h1, h3, h4, h5, a:hover, #logo h1, #logo h1 a:hover, 
+footer a, #slideshow-caption p, .form_settings input, .form_settings textarea,
+#blog_container h4, .blog h2, ul#nav li.selected ul a, div.image-title { 
+  color: #FFF;}
+
+div.navigation a.prev {
+  background: url(../images/prev_arrow_white.gif) no-repeat left;}
+  
+div.navigation a.next {
+  background: url(../images/next_arrow_white.gif) no-repeat right;}
+
+
+/********  dark Css end ********/
+/********  portofolio Css start ********/
+
+div.content {
+  display: none;
+  clear: both;}
+
+div.content a, div.navigation a {
+  text-decoration: none;}
+  
+div.controls {
+  position: absolute;
+  bottom: 0;
+  height: 65px;
+  padding: 25px 0 0 0;
+  background: url(../images/image_transparent.png);
+  width: 100%;}
+  
+div.controls a {
+  padding: 5px 20px 0 0;
+  float: left;}
+  
+div.ss-controls {
+  float: right;
+  height: 30px;}
+
+div.nav-controls {
+  float: right;
+  clear: right;}
+
+div.slideshow-container, div.loader, div.slideshow a.advance-link {
+  width: 950px; /* This should be set to be at least the width of the largest image in the slideshow with padding */
+  line-height: 0;}
+
+div.loader, div.slideshow a.advance-link, div.caption-container {
+  height: 450px; /* This should be set to be at least the height of the largest image in the slideshow with padding */ }
+
+div.slideshow-container {
+  position: relative;
+  clear: both;
+  float: left;
+  height: 453px;
+  margin: 0 0 30px 25px;}
+
+div.slideshow-container img {
+  float: left;}
+  
+div.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(loader.gif) no-repeat center;}
+  
+div.slideshow span.image-wrapper {
+  position: absolute;
+  top: 3px;
+  left: 0;}
+  
+div.slideshow a.advance-link {
+  display: block;
+  line-height: 0; /* This should be set to be at least the height of the largest image in the slideshow with padding */
+  text-align: center;}
+
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+  text-decoration: none;}
+  
+div.slideshow a.advance-link:focus {
+  outline: none;}
+
+div.caption-container {
+  float: left;}
+  
+span.image-caption {
+  display: block;
+  position: absolute;
+  bottom: 35px;
+  left: 20px;}
+
+div.caption {
+  padding: 10px 0;
+  width: 500px;}
+  
+div.image-title {
+  font: normal 130% arial, sans-serif;}
+  
+div.navigation-container {
+  float: left;
+  position: relative;
+  left: 50%;}
+  
+div.navigation {
+  float: left;
+  position: relative;
+  left: -50%;}
+  
+div.navigation a.pageLink {
+  height: 77px;
+  line-height: 77px;
+  display: block;
+  position: relative;
+  float: left;
+  margin: 2px;
+  width: 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  visibility: hidden;}
+  
+  
+div.navigation a.pageLink:focus {
+  outline: none;}
+
+div.navigation a.prev {
+  margin-right: 10px;}
+  
+div.navigation a.next {
+  margin-left: 10px;}
+
+ul.thumbs {
+  position: relative;
+  float: left;
+  margin: 2px 0 0 0;
+  padding: 0;}
+  
+ul.thumbs li {
+  float: left;
+  padding: 0;
+  margin: 2px;
+  list-style: none;}
+  
+a.thumb {
+  display: block;
+  padding: 2px;}
+  
+a.thumb:focus {
+  outline: none;}
+  
+ul.thumbs img {
+  display: block;}
+  
+div.gallery-gutter {
+  clear: both;
+  padding-bottom: 20px;}
+
+
+/********  portofolio Css end ********/
