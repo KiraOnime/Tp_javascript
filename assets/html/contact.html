@@ -4,69 +4,116 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Velo plateau</title>
   <link href="../css/style.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../js/js.js"></script>
+  <script type="text/javascript" src="../javascript/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../javascript/jquery.validate.js"></script>
+  <script type="text/javascript" src="../javascript/validate.js"></script>
 </head>
 
 <body>
   <div id="main">
     <div id="header">
       <div id="welcome">
-	    <h1><span>VÉLO</span> PLATEAU</h1>
+	    <h1><a href="../../index.html"><span>VÉLO</span> PLATEAU</a></h1>
 	  </div><!--end welcome-->
       <div id="menubar">
         <ul id="menu">
-          <li><a href="../../index.html">Acceuil</a></li>
-          <li><a href="ourwork.html">La Galerie</a></li>
-          <li><a href="testimonials.html">Le Club</a></li>
-          <li><a href="projects.html">Projets</a></li>
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="galerie.html">La Galerie</a></li>
+          <li><a href="club.html">Le Club</a></li>
+          <li><a href="projets.html">Projets</a></li>
           <li class="current"><a href="contact.html">Contact</a></li>
         </ul>
       </div><!--end menubar-->
     </div><!--end header-->
 	
 	<div id="site_content">	
-
 	  <div id="text_content">   
-        <h3>Nom</h3>
-        <p><input class="contact" type="text" name="your_name" value=""/></p>
-	    <h3>Courriel</h3>
-		<p><input class="contact" type="text" name="your_email" value="" /></p>
-		<h3>Message</h3>
-		<p><textarea class="contact textarea" rows="6" cols="30" name="your_message"></textarea></p>
-		<h3> Question: 9 + 3 = ?</h3>
-		<p><input type="text" name="user_answer" class="contact" /><input type="hidden" name="answer" value="4d76fe9775" /></p>
-		<p><input class="submit" type="submit" name="contact_submitted" value="Send" /></p>
+        <form class="cmxform" id="commentForm" method="get" action="">
+          <fieldset>
+            <legend>Vous voulez nous contacter?</legend>
+            <p>
+              <label for="cname">Nom</label>
+              <em>*</em><input id="cname" name="user[name]"/>
+            </p>
+            <p>
+              <label for="cemail">E-Mail</label>
+              <em>*</em><input id="cemail" name="user[email]"/>
+            </p>
+            <p>
+              <label for="curl">URL</label>
+              <em>*</em><input id="curl" name="user[url]" value="" />
+            </p>
+            <p>
+              <label for="cdate">Date</label>
+              <em>*</em><input id="cdate" name="user[date]" value="" />
+            </p>
+            <p>
+              <label for="cprofil">Qui êtes vous?</label>
+              <select id="thechoices" name="user[choices]">
+                <option value='blank' selected='selected'></option>
+                <option value="box2">Cyclosportif</option>
+                <option value="box3">Compétition</option>
+                <option value="all">Tous les profils</option> 
+              </select>
+            </p>
+            <p id="choices">
+              <label for="cprofile" id="cprofile">Profil cyclosportif</label>
+              <span id="boxes">
+                <select id="box2">
+                  <option value="01">occasionnel</option>
+                  <option value="02">familial</option>
+                  <option value="03">épicurien</option>
+                  <option value="04">assidu</option>
+                  <option value="05">à l'année</option>
+                  <option value="06">multiple</option>
+                </select>
+                <select id="box3">
+                  <option value="01">route</option>
+                  <option value="02">montagne</option>
+                  <option value="03">piste</option>
+                  <option value="04">bmx</option>
+                  <option value="05">cyclocross</option>
+                  <option value="06">multiple</option>
+                </select>
+              </span>
+            </p>
+            <p>
+              <label for="ccomment">Vos commentaires</label>
+              <em>*</em><textarea id="ccomment" name="user[comment]" rows="" cols=""></textarea>
+            </p>    
+            <p>
+              <input class="submit" type="submit" value="Soumettre"/>
+            </p>
+          </fieldset>
+        </form>
 	  </div><!--close text_content-->
-
       <div class="static_image">
-	    <img width="500" height="450" src="../images/contact.jpg" alt="contact" />
+	    <img src="../images/contact.jpg" alt="contact" class="content_image"/>
 	  </div> 	
-
     </div><!--end site_content--> 
   </div><!--end main-->
   
   <div id="footer">
     <div id="footer_container">
-	  <div class="footer_container_box">
-		<h4>La Galerie</h4>
-	    <p> Phasellus laoreet feugiat risus. Ut tincidunt, ante vel fermentum iaculis.</p>
-		  <a href="ourwork.html">Plus...</a>
-	  </div><!--close footer_container_box-->
       <div class="footer_container_box">
-       <h4>La mission du Club</h4>
-	    <p> Phasellus laoreet feugiat risus. Ut tincidunt, ante vel fermentum iaculis.</p>
-		  <a href="testimonials.html">Plus...</a>
-	  </div><!--close footer_container_box-->
-      <div class="footer_container_boxl">
-		<h4>Projets</h4>
-	    <p> Phasellus laoreet feugiat risus. Ut tincidunt, ante vel fermentum iaculis.</p>
-		  <a href="projects.html">Plus...</a>  
-	  </div><!--close footer_container_box1-->      
-	  <div class="clearBoth"/>
-
+        <h4>La Galerie</h4>
+        <p>  On vous propose un choix varié de photos en lien avec le vaste monde du cyclisme. La galerie sera mise à jour régulièrement. Si vous avez des photos à soumettre, vous êtes les bienvenus.</p>
+        <a href="galerie.html">Plus...</a>
+      </div><!--close footer_container_box-->
+     <div class="footer_container_box">
+       <h4>Le Club</h4>
+        <p> Toutes les routes mènent au vélo... La mission du club est de nourrir la passion du cyclisme à travers ses différentes facettes. Par la pratique,  évidemment, et bien plus encore. </p>
+        <a href="club.html">Plus...</a>
+      </div><!--close footer_container_box-->
+      <div class="footer_container_box">
+        <h4>Suivez-nous</h4>
+        <a href="https://twitter.com/Kira_Onime"><img src="../images/twitter.png" alt="Twitter"/></a>
+        <a href="https://www.facebook.com"><img src="../images/facebook.png" alt="Facebook"/></a>
+        <a href="http://ca.linkedin.com"><img src="../images/linkedin.png" alt="linkedIn"/></a>
+      </div> 
     </div><!--close footer_container--> 
-  </div><!--close footer-->  
+  </div><!--close footer--> 
   
+  <script type="text/javascript" src="../javascript/show_hide.js"></script>
 </body>
 </html>

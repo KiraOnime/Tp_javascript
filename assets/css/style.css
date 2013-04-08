@@ -2,10 +2,13 @@
 
 #gal1{
     overflow-y:scroll;
-    width:78%;
-    height:40%;
+    width:411px;
+    height:50%;
 }
 
+.active{
+    width: 411px;
+}
 /********  image zoom Css end ********/
 
 /********  Basic Css start ********/
@@ -22,7 +25,7 @@ html
   padding: 0;}
 
 body
-{ font: normal 100% Georgia, serif;
+{ font: normal 100% arial, Georgia, serif;
   background: #535353 url(../images/pattern.jpg) repeat;
   color: #FFF;}
 
@@ -35,7 +38,7 @@ img
 { border: 0;}
 
 h1, h2, h3, h4, h5, h6 
-{ font: normal 175% Georgia, serif;
+{ font: normal 175%arial,  Georgia, serif;
   color: #FFF;
   text-shadow: 1px 1px #000;
   letter-spacing: -1px;
@@ -43,10 +46,10 @@ h1, h2, h3, h4, h5, h6
   padding: 5px 0 0 0;}
 
 h2
-{ font: normal 165% Georgia, serif;}
+{ font: normal 165% arial, Georgia, serif;}
 
 h3
-{ font: normal 100% Georgia, serif;
+{ font: normal 100% arial, Georgia, serif;
 }
 
 h3 a, h3 a:hover
@@ -56,12 +59,12 @@ h3 a, h3 a:hover
 h4, h5, h6
 { margin: 0;
   padding: 0 0 5px 0;
-  font: normal 150% Georgia, serif;
+  font: normal 150% arial, Georgia, serif;
   color: #098EFF;
   line-height: 1.5em;}
 
 h5, h6
-{ font: normal 95% Georgia, serif;
+{ font: normal 95% arial, Georgia, serif;
   color: #888;
   padding-bottom: 15px;}
 
@@ -69,11 +72,8 @@ a, a:hover
 { background: transparent;
   outline: none;
   text-decoration: none;
-  color: #098EFF;
+  color: white;
 }
-
-a:hover
-{ text-decoration: underline;}
 
 ul
 { margin: 2px 0 22px 30px;
@@ -106,7 +106,7 @@ ol li
   background: transparent;} 
   
 #welcome H1
-{ font: normal 200% times, Helvetica, sans-serif;
+{ font: normal 220% arial black, Helvetica, sans-serif;
   color: #FFF;}
   
 span
@@ -114,7 +114,7 @@ span
 
  
 #menubar
-{ width: 635px;
+{ width: 670px;
   height: 35px;
   text-align: center; 
   margin: 0 auto;
@@ -135,7 +135,7 @@ ul#menu li
   background: transparent;}
 
 ul#menu li a
-{ font: normal 120% Georgia, serif;
+{ font: normal 130% arial, Georgia, serif;
   float: left;
   letter-spacing: -1px;
   height: 30px;
@@ -157,7 +157,7 @@ ul#menu li.current a
   overflow: hidden;
   margin: 0 auto;
   padding: 20px 0 0 0;
-  background: #1D1D1D;
+  background: #433834;
   -webkit-box-shadow: inset 5px 5px 30px 5px #535353;
   -moz-box-shadow: inset 5px 5px 30px 5px #535353;
   box-shadow: inset 5px 5px 30px 5px #535353;
@@ -170,18 +170,24 @@ ul#menu li.current a
 
 #text_content
 { float: right;
-  width: 500px;
+  width: 520px;
   padding: 0; 
   margin: 0 20px 0 20px;}
   
 .static_image
 { 
-  width: 530px;
+  width: 380px;
   height: 450px;
   margin: 0 0 20px 20px;}  
   
+.content_image
+{
+  width:380px;
+  height:342px;
+  }
+  
 #footer
-{ font: normal 120% Georgia, serif;
+{ font: normal 120% arial, Georgia, serif;
   width: 1070px;
   letter-spacing: -1px;
   padding: 0 0 26px 0;
@@ -197,7 +203,7 @@ ul#menu li.current a
 { text-decoration: underline;}
 
 .footer_container_box
-{ font: normal 80% Arial, Helvetica, sans-serif;
+{ font: normal 80% arial, Helvetica, sans-serif;
   width: 325px;
   padding: 5px;
   text-align: center;
@@ -207,7 +213,7 @@ ul#menu li.current a
   color: #FFF;}
 
 .footer_container_boxl
-{ font: normal 80% Arial, Helvetica, sans-serif;
+{ font: normal 80% arial, Helvetica, sans-serif;
   width: 325px;
   padding: 5px;
   text-align: center;
@@ -215,6 +221,7 @@ ul#menu li.current a
   float: left;
   background: transparent;
   color: #FFF;}
+
 
 .form_settings
 { margin: 15px 0 0 0;}
@@ -310,7 +317,7 @@ div.pagination span.current {
   background: #444;
   color: #FFF;}
 
-h1, h3, h4, h5, a:hover, #logo h1, #logo h1 a:hover, 
+h1, h3, h4, h5, #logo h1, #logo h1 
 footer a, #slideshow-caption p, .form_settings input, .form_settings textarea,
 #blog_container h4, .blog h2, ul#nav li.selected ul a, div.image-title { 
   color: #FFF;}
@@ -342,7 +349,8 @@ div.controls {
   
 div.controls a {
   padding: 5px 20px 0 0;
-  float: left;}
+  float: left;
+  color:#098eff;}
   
 div.ss-controls {
   float: right;
@@ -467,3 +475,83 @@ div.gallery-gutter {
 
 
 /********  portofolio Css end ********/
+
+/********  contact start ********/
+
+label {
+    width: 10em;
+    float: left;
+    margin-left:10px;
+}
+
+label.error {
+    float: right; 
+    color: red;
+    padding-left: .5em; 
+    vertical-align: top;
+    position:fixed;
+    width:425px;
+    background:white;
+    border:1px solid red;
+    margin-left:-675px;
+}
+
+p {
+    clear: both;
+}
+
+.submit {
+    margin-left: 180px;
+    width:100px;
+}
+
+em {
+    font-weight: bold;
+    padding-right: 1em;
+    vertical-align: top;
+}
+
+fieldset p label{
+    float:left;
+    width:150px;
+    margin-top:2px;
+}
+
+#cprofile{
+    margin-top:2px;
+    width:150px;
+    float:left;
+}
+
+#thechoices{
+    margin-left:22px;
+}
+
+#boxes{
+    float:right;
+    width:210px;
+    margin-right:25px;
+}
+
+#box2, #box3{
+    margin-left:-3px;
+    margin-bottom:15px;
+}
+
+#commentForm{
+    width:425px;
+}
+
+input, textarea, select{
+    width:210px;
+}
+
+textarea{
+    height:75px;
+}
+
+legend{
+    padding-left:5px;
+}
+
+/********  contact end ********/
